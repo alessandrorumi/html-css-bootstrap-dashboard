@@ -17,7 +17,7 @@
 <body>
   <!-- Top -->
   <div class="wrapper-top">
-    <nav class="navbar navbar-expand navbar-dark">
+    <nav class="navbar h-100 navbar-expand navbar-dark">
       <div class="container-fluid justify-content-start">
         <a class="navbar-brand" href="#">
           <img src="img/logo.svg" alt="">
@@ -25,13 +25,13 @@
         <form>
             <input class="form-control" type="text" placeholder="Prova a cercare: Lezioni di Laravel" readonly="" aria-label="Search">
         </form>
-        <a href="#">
+        <a href="#" class="d-none d-sm-inline-block">
           <i class="fa-solid fa-bars" style="color: #424242;"></i>
         </a>
-        <a href="#">
+        <a href="#" class="d-none d-sm-inline-block">
           <i class="fa-solid fa-circle-question" style="color: #424242;"></i>
         </a>
-        <a href="#">
+        <a href="#" class="d-none d-sm-inline-block">
           <i class="fa-solid fa-ellipsis-vertical" style="color: #424242;"></i>
         </a>
         <div class="dropstart">
@@ -52,7 +52,31 @@
   <!-- Botttom -->
   <div class="wrapper-bottom">
     <!-- Sidebar -->
-    <div class="sidebar"></div>
+    <div class="sidebar col-xs-1 col-sm-2">
+      <div class=" pt-4 p-2 d-flex flex-column h-100 w-sm-50">
+        <ul class="nav flex-column mb-auto flex-grow-1">
+          <li>
+            <a href="#" class="nav-link text-center">
+              <i class="fa-solid fa-house" style="color: #ffffff;"></i> <span class="d-none d-sm-inline-block">Home</span></a>
+          </li>
+          <li>
+            <a href="#" class="nav-link text-center">
+              <i class="fa-solid fa-chart-column" style="color: #ffffff;"></i> <span class="d-none d-sm-inline-block">Stats</span></a>
+          </li>
+          <li>
+            <a href="#" class="nav-link text-center">
+              <i class="fa-solid fa-signal" style="color: #ffffff;"> </i> <span class="d-none d-sm-inline-block">Signals</span></a>
+          </li>
+        </ul>
+        <ul class="nav flex-column">
+          <li>
+            <a href="#" class="nav-link text-center">
+              <i class="fa-solid fa-gear" style="color: #ffffff;"></i> <span class="d-none d-sm-inline-block">Admin</span></a>
+          </li>
+        </ul>
+      </div>
+    
+    </div>
     <!-- Main Content -->
     <div class="main-content"></div>
 

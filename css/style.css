@@ -15,14 +15,14 @@
 
 .sidebar {
   background-color: rgba(1, 0, 24, 0.8);
-  width: 10rem;
+  /* width: 10rem; */ /* TEST BOOTSTRAP */
   height: calc(100vh - 4rem);
   background-image: url(../img/sidebar-bg.png);
 }
 
 .main-content {
   background-color: darkgray;
-  width: calc(100vw - 6rem);
+  width: calc(100vw - 4rem); /* TEST BOOTSTRAP */
   height: calc(100vh - 4rem);
   overflow-y: auto;
 }
@@ -35,4 +35,8 @@ form {
 
 .navbar a {
   padding: 0 .65rem;
+}
+
+.nav-link {
+  color: #fff;
 }
