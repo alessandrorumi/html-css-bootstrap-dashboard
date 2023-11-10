@@ -1,3 +1,38 @@
 * {
   font-family: 'Roboto', sans-serif;
 }
+
+/* Macroaree */
+
+.wrapper-top {
+  background-color: #fff;
+  height: 4rem;
+}
+
+.wrapper-bottom {
+  display: flex;
+}
+
+.sidebar {
+  background-color: rgba(1, 0, 24, 0.8);
+  width: 10rem;
+  height: calc(100vh - 4rem);
+  background-image: url(../img/sidebar-bg.png);
+}
+
+.main-content {
+  background-color: darkgray;
+  width: calc(100vw - 6rem);
+  height: calc(100vh - 4rem);
+  overflow-y: auto;
+}
+
+/* Navbar */
+
+form {
+  flex-grow: 1;
+}
+
+.navbar a {
+  padding: 0 .65rem;
+}
