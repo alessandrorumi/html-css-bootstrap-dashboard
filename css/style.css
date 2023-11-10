@@ -2,6 +2,10 @@
   font-family: 'Roboto', sans-serif;
 }
 
+/* DEBUG */
+
+
+
 /* Macroaree */
 
 .wrapper-top {
@@ -21,7 +25,6 @@
 }
 
 .main-content {
-  background-color: darkgray;
   width: calc(100vw - 4rem); /* TEST BOOTSTRAP */
   height: calc(100vh - 4rem);
   overflow-y: auto;
@@ -39,4 +42,16 @@ form {
 
 .nav-link {
   color: #fff;
+}
+
+/* DEBUG */
+
+.test-1 .col-12 {
+  background-color: #1b72e8;
+  min-height: 6rem;
+}
+
+.nested {
+  background-color: darkcyan;
+  min-height: 6rem;
 }
