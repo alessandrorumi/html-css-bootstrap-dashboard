@@ -1,3 +1,5 @@
+/* Generali */
+
 * {
   font-family: 'Roboto', sans-serif;
   font-size: .9rem;
@@ -30,11 +32,21 @@ a {
 }
 
 .main-content {
-  width: calc(100vw - 10rem);
+  flex-grow: 1;
   overflow-y: auto;
 }
 
-/* Navbar */
+.card-header {
+  font-size: 2rem;
+}
+
+/* Sidebar */
+
+@media all and (max-width: 576px) {
+  .sidebar {
+    width: 5rem;
+  }
+}
 
 form {
   flex-grow: 1;
@@ -67,7 +79,7 @@ form {
 .info {
   background-color: #1b70e8f1;
   color: #fff;
-  width: calc(100vw - 10rem);
+  width: 100%;
 }
 
 #app {

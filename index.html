@@ -26,13 +26,13 @@
         <form>
             <input class="form-control" type="text" placeholder="Prova a cercare: Lezioni di Laravel" readonly="" aria-label="Search">
         </form>
-        <a href="#" class="d-none d-sm-inline-block">
+        <a href="#" class="d-none d-md-inline-block">
           <i class="fa-solid fa-bars" style="color: #424242;"></i>
         </a>
-        <a href="#" class="d-none d-sm-inline-block">
+        <a href="#" class="d-none d-md-inline-block">
           <i class="fa-solid fa-circle-question" style="color: #424242;"></i>
         </a>
-        <a href="#" class="d-none d-sm-inline-block">
+        <a href="#" class="d-none d-md-inline-block">
           <i class="fa-solid fa-ellipsis-vertical" style="color: #424242;"></i>
         </a>
         <div class="dropstart">
@@ -77,12 +77,14 @@
         </ul>
       </div>
     </div>
+
     <!-- Main Content -->
-    <div class="main-content">   
-      <!-- Info -->
-      <section class="info float-left">
-        <div class="row mx-0 p-3 mb-4">
-          <div class="col-12 col-md-6">
+    <div class="main-content"> 
+
+      <!-- Top -->
+      <section class="info">
+        <div class="row mx-0 p-3 pb-1 mb-4">
+          <div class="col-12 col-md-8 pb-3">
             <div class="d-flex d-row align-items-center">
               <span id="boolean">Boolean </span>
               <a href="#" class="btn rounded-pill btn-primary">Piano blaze</a>
@@ -94,14 +96,17 @@
             </div>
           </div>
 
-          <div class="col-12 col-md-6 d-flex flex-column justify-content-between">
+          <div class="col-12 col-md-4 pb-3 d-flex flex-column justify-content-between">
             <div>Studenti Online negli ultimi 30 minuti</div>
             <div id="online-students">125</div>
           </div>
         </div>
       </section>
+
+      <!-- Bottom -->
       <div class="container-fluid px-0">
         <div class="row mx-0 mb-4 g-3">
+          <!-- Left -->
           <div class="col-12 order-0 order-md-0 col-md-8">
             <!-- Prossime Classi -->
             <section class="next-class">
@@ -110,12 +115,12 @@
                   <div class="card-header">
                     Prossime Classi
                   </div>
-                  <table class="table table-hover">
+                  <table class="table table-hover mb-0">
                     <thead>
                       <tr>
                         <th scope="col" class="name">Nome</th>
-                        <th scope="col" class="date d-none d-md-table-cell">Data inizio</th>
-                        <th scope="col" class="roi d-none d-md-table-cell">ROI</th>
+                        <th scope="col" class="date d-none d-sm-table-cell">Data inizio</th>
+                        <th scope="col" class="roi d-none d-sm-table-cell">ROI</th>
                         <th scope="col" class="state">Stato</th>
                         <th scope="col" class="action">Azioni</th>
                       </tr>
@@ -127,8 +132,8 @@
                           <img src="img/class-avatar.jpg" class="h-75" alt="">
                           Classe 75
                         </th>
-                        <td class="date d-none d-md-table-cell">15 Feb 2021</td>
-                        <td class="roi d-none d-md-table-cell">20%</td>
+                        <td class="date d-none d-sm-table-cell">15 Feb 2021</td>
+                        <td class="roi d-none d-sm-table-cell">20%</td>
                         <td class="state"><button type="button" class="btn btn-success">Done</button></td>
                         <td class="action">
                           <a href="#">
@@ -149,8 +154,8 @@
                           <img src="img/class-avatar.jpg" class="h-75" alt="">
                           Classe 76
                         </th>
-                        <td class="date d-none d-md-table-cell">15 Feb 2021</td>
-                        <td class="roi d-none d-md-table-cell">20%</td>
+                        <td class="date d-none d-sm-table-cell">15 Feb 2021</td>
+                        <td class="roi d-none d-sm-table-cell">20%</td>
                         <td class="state"><button type="button" class="btn btn-success">Done</button></td>
                         <td class="action">
                           <a href="#">
@@ -171,9 +176,9 @@
                           <img src="img/class-avatar.jpg" class="h-75" alt="">
                           Classe 77
                         </th>
-                        <td class="date d-none d-md-table-cell">15 Feb 2021</td>
-                        <td class="roi d-none d-md-table-cell">20%</td>
-                        <td class="state"><button type="button" class="btn btn-success">Done</button></td>
+                        <td class="date d-none d-sm-table-cell">15 Feb 2021</td>
+                        <td class="roi d-none d-sm-table-cell">20%</td>
+                        <td class="state"><button type="button" class="btn btn-warning">Process</button></td>
                         <td class="action">
                           <a href="#">
                             <button type="button" class="btn btn-outline-secondary">
@@ -193,8 +198,8 @@
                           <img src="img/class-avatar.jpg" class="h-75" alt="">
                           Classe 78
                         </th>
-                        <td class="date d-none d-md-table-cell">15 Feb 2021</td>
-                        <td class="roi d-none d-md-table-cell">20%</td>
+                        <td class="date d-none d-sm-table-cell">15 Feb 2021</td>
+                        <td class="roi d-none d-sm-table-cell">20%</td>
                         <td class="state"><button type="button" class="btn btn-success">Done</button></td>
                         <td class="action">
                           <a href="#">
@@ -215,9 +220,9 @@
                           <img src="img/class-avatar.jpg" class="h-75" alt="">
                           Classe 79
                         </th>
-                        <td class="date d-none d-md-table-cell">15 Feb 2021</td>
-                        <td class="roi d-none d-md-table-cell">20%</td>
-                        <td class="state"><button type="button" class="btn btn-success">Done</button></td>
+                        <td class="date d-none d-sm-table-cell">15 Feb 2021</td>
+                        <td class="roi d-none d-sm-table-cell">20%</td>
+                        <td class="state"><button type="button" class="btn btn-danger">Failed</button></td>
                         <td class="action">
                           <a href="#">
                             <button type="button" class="btn btn-outline-secondary">
@@ -237,8 +242,8 @@
                           <img src="img/class-avatar.jpg" class="h-75" alt="">
                           Classe 80
                         </th>
-                        <td class="date d-none d-md-table-cell">15 Feb 2021</td>
-                        <td class="roi d-none d-md-table-cell">20%</td>
+                        <td class="date d-none d-sm-table-cell">15 Feb 2021</td>
+                        <td class="roi d-none d-sm-table-cell">20%</td>
                         <td class="state"><button type="button" class="btn btn-success">Done</button></td>
                         <td class="action">
                           <a href="#">
@@ -259,9 +264,9 @@
                           <img src="img/class-avatar.jpg" class="h-75" alt="">
                           Classe 81
                         </th>
-                        <td class="date d-none d-md-table-cell">15 Feb 2021</td>
-                        <td class="roi d-none d-md-table-cell">20%</td>
-                        <td class="state"><button type="button" class="btn btn-success">Done</button></td>
+                        <td class="date d-none d-sm-table-cell">15 Feb 2021</td>
+                        <td class="roi d-none d-sm-table-cell">20%</td>
+                        <td class="state"><button type="button" class="btn btn-danger">Failed</button></td>
                         <td class="action">
                           <a href="#">
                             <button type="button" class="btn btn-outline-secondary">
@@ -281,8 +286,8 @@
                           <img src="img/class-avatar.jpg" class="h-75" alt="">
                           Classe 82
                         </th>
-                        <td class="date d-none d-md-table-cell">15 Feb 2021</td>
-                        <td class="roi d-none d-md-table-cell">20%</td>
+                        <td class="date d-none d-sm-table-cell">15 Feb 2021</td>
+                        <td class="roi d-none d-sm-table-cell">20%</td>
                         <td class="state"><button type="button" class="btn btn-success">Done</button></td>
                         <td class="action">
                           <a href="#">
@@ -303,22 +308,77 @@
               </div>
             </section>
           </div>
-          <!-- To-Do -->
+
+          <!-- Right -->
           <div class="col-12 order-2 order-md-1 col-md-4">
-            <div class="nested rounded-3">
-              To-Do
+            <!-- To-Do -->
+            <div class="col-12 mb-3">
+              <div class="nested rounded-3">
+                <div class="card">
+                  <div class="card-header">
+                    To-Do
+                  </div>
+                  <ul class="list-group list-group-flush">
+                    <li class="list-group-item">
+                      <div>
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        <label class="form-check-label" for="flexCheckDefault">
+                          Kickoff Nuove Classi
+                        </label>
+                      </div>
+                    </li>
+                    <li class="list-group-item">
+                      <div>
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        <label class="form-check-label" for="flexCheckDefault">
+                          Lezione Bootstrap 5 in classe #75
+                        </label>
+                      </div>
+                    </li>
+                    <li class="list-group-item">
+                      <div>
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        <label class="form-check-label" for="flexCheckDefault">
+                          Controllare Username Github Studenti
+                        </label>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <!-- Grafico -->
+            <div class="col-12">
+              <div class="nested rounded-3">
+                <div class="card">
+                  <div class="card-header">
+                    Grafico
+                  </div>
+                  <ul class="list-group list-group-flush">
+                    <li class="list-group-item">
+                      <img src="img/stats.jpeg" class="w-100" alt="">
+                      <div>
+                        <div class="graphic-title">
+                          <h5>Utenti Attivi</h5>
+                        </div>
+                        <div class="graphic-content">
+                          Lista degli utenti attivi nell'ultimo mese
+                        </div>
+                      </div>
+                    </li>
+                    <li class="list-group-item">Gennaio: 1200</li>
+                    <li class="list-group-item">Febbraio: 800</li>
+                    <li class="list-group-item">Marzo: 1500</li>
+                  </ul>
+                </div>
+              </div>
             </div>
           </div>
+          
           <!-- F.A.Q -->
           <div class="col-12 order-1 order-md-2 col-md-8">
             <div class="nested rounded-3">
               F.A.Q
-            </div>
-          </div>
-          <!-- Grafico -->
-          <div class="col-12 order-3 order-md-3 col-md-4">
-            <div class="nested rounded-3">
-              Grafico
             </div>
           </div>
         </div>
