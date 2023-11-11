@@ -53,8 +53,8 @@
   <!-- Botttom -->
   <div class="wrapper-bottom">
     <!-- Sidebar -->
-    <div class="sidebar col-xs-1 col-sm-2">
-      <div class=" pt-4 p-2 d-flex flex-column h-100 w-sm-50">
+    <div class="sidebar">
+      <div class=" pt-4 p-2 d-flex flex-column h-100">
         <ul class="nav flex-column mb-auto flex-grow-1">
           <li>
             <a href="#" class="nav-link text-center">
@@ -80,9 +80,9 @@
     <!-- Main Content -->
     <div class="main-content">   
       <!-- Info -->
-      <section class="info">
-        <div class="row mb-4 px-2 test-1">
-          <div class="col-12 col-md-6 pb-1 p-3">
+      <section class="info float-left">
+        <div class="row mx-0 p-3 mb-4">
+          <div class="col-12 col-md-6">
             <div class="d-flex d-row align-items-center">
               <span id="boolean">Boolean </span>
               <a href="#" class="btn rounded-pill btn-primary">Piano blaze</a>
@@ -94,36 +94,232 @@
             </div>
           </div>
 
-          <div class="col-12 col-md-6 p-3">
+          <div class="col-12 col-md-6 d-flex flex-column justify-content-between">
             <div>Studenti Online negli ultimi 30 minuti</div>
             <div id="online-students">125</div>
           </div>
         </div>
       </section>
-
-      <!-- Prossime Classi -->
-      <div class="row px-3 mb-4 g-3">
-        <div class="col-12 order-0 order-md-0 col-md-8">
-          <div class="nested rounded-3">
-          Prossime Classi
-        </div> 
-      </div>
-      <!-- To-Do -->
-        <div class="col-12 order-2 order-md-1 col-md-4">
-          <div class="nested rounded-3">
-            To-Do
+      <div class="container-fluid px-0">
+        <div class="row mx-0 mb-4 g-3">
+          <div class="col-12 order-0 order-md-0 col-md-8">
+            <!-- Prossime Classi -->
+            <section class="next-class">
+              <div class="nested rounded-3">
+                <div class="card">
+                  <div class="card-header">
+                    Prossime Classi
+                  </div>
+                  <table class="table table-hover">
+                    <thead>
+                      <tr>
+                        <th scope="col" class="name">Nome</th>
+                        <th scope="col" class="date d-none d-md-table-cell">Data inizio</th>
+                        <th scope="col" class="roi d-none d-md-table-cell">ROI</th>
+                        <th scope="col" class="state">Stato</th>
+                        <th scope="col" class="action">Azioni</th>
+                      </tr>
+                    </thead>
+                    <tbody class="align-middle">
+                      <!-- 75 -->
+                      <tr>
+                        <th scope="row" class="w-50 name">
+                          <img src="img/class-avatar.jpg" class="h-75" alt="">
+                          Classe 75
+                        </th>
+                        <td class="date d-none d-md-table-cell">15 Feb 2021</td>
+                        <td class="roi d-none d-md-table-cell">20%</td>
+                        <td class="state"><button type="button" class="btn btn-success">Done</button></td>
+                        <td class="action">
+                          <a href="#">
+                            <button type="button" class="btn btn-outline-secondary">
+                              <i class="fa-solid fa-pencil"></i> 
+                            </button>
+                          </a> 
+                          <a href="#">
+                            <button type="button" class="btn btn-outline-secondary">
+                              <i class="fa-solid fa-trash"></i> 
+                            </button>
+                          </a>
+                        </td>
+                      </tr>
+                      <!-- 76 -->
+                      <tr>
+                        <th scope="row" class="w-50 name">
+                          <img src="img/class-avatar.jpg" class="h-75" alt="">
+                          Classe 76
+                        </th>
+                        <td class="date d-none d-md-table-cell">15 Feb 2021</td>
+                        <td class="roi d-none d-md-table-cell">20%</td>
+                        <td class="state"><button type="button" class="btn btn-success">Done</button></td>
+                        <td class="action">
+                          <a href="#">
+                            <button type="button" class="btn btn-outline-secondary">
+                              <i class="fa-solid fa-pencil"></i> 
+                            </button>
+                          </a> 
+                          <a href="#">
+                            <button type="button" class="btn btn-outline-secondary">
+                              <i class="fa-solid fa-trash"></i> 
+                            </button>
+                          </a>
+                        </td>
+                      </tr>
+                      <!-- 77 -->
+                      <tr>
+                        <th scope="row" class="w-50 name">
+                          <img src="img/class-avatar.jpg" class="h-75" alt="">
+                          Classe 77
+                        </th>
+                        <td class="date d-none d-md-table-cell">15 Feb 2021</td>
+                        <td class="roi d-none d-md-table-cell">20%</td>
+                        <td class="state"><button type="button" class="btn btn-success">Done</button></td>
+                        <td class="action">
+                          <a href="#">
+                            <button type="button" class="btn btn-outline-secondary">
+                              <i class="fa-solid fa-pencil"></i> 
+                            </button>
+                          </a> 
+                          <a href="#">
+                            <button type="button" class="btn btn-outline-secondary">
+                              <i class="fa-solid fa-trash"></i> 
+                            </button>
+                          </a>
+                        </td>
+                      </tr>
+                      <!-- 78 -->
+                      <tr>
+                        <th scope="row" class="w-50 name">
+                          <img src="img/class-avatar.jpg" class="h-75" alt="">
+                          Classe 78
+                        </th>
+                        <td class="date d-none d-md-table-cell">15 Feb 2021</td>
+                        <td class="roi d-none d-md-table-cell">20%</td>
+                        <td class="state"><button type="button" class="btn btn-success">Done</button></td>
+                        <td class="action">
+                          <a href="#">
+                            <button type="button" class="btn btn-outline-secondary">
+                              <i class="fa-solid fa-pencil"></i> 
+                            </button>
+                          </a> 
+                          <a href="#">
+                            <button type="button" class="btn btn-outline-secondary">
+                              <i class="fa-solid fa-trash"></i> 
+                            </button>
+                          </a>
+                        </td>
+                      </tr>
+                      <!-- 79 -->
+                      <tr>
+                        <th scope="row" class="w-50 name">
+                          <img src="img/class-avatar.jpg" class="h-75" alt="">
+                          Classe 79
+                        </th>
+                        <td class="date d-none d-md-table-cell">15 Feb 2021</td>
+                        <td class="roi d-none d-md-table-cell">20%</td>
+                        <td class="state"><button type="button" class="btn btn-success">Done</button></td>
+                        <td class="action">
+                          <a href="#">
+                            <button type="button" class="btn btn-outline-secondary">
+                              <i class="fa-solid fa-pencil"></i> 
+                            </button>
+                          </a> 
+                          <a href="#">
+                            <button type="button" class="btn btn-outline-secondary">
+                              <i class="fa-solid fa-trash"></i> 
+                            </button>
+                          </a>
+                        </td>
+                      </tr>
+                      <!-- 80 -->
+                      <tr>
+                        <th scope="row" class="w-50 name">
+                          <img src="img/class-avatar.jpg" class="h-75" alt="">
+                          Classe 80
+                        </th>
+                        <td class="date d-none d-md-table-cell">15 Feb 2021</td>
+                        <td class="roi d-none d-md-table-cell">20%</td>
+                        <td class="state"><button type="button" class="btn btn-success">Done</button></td>
+                        <td class="action">
+                          <a href="#">
+                            <button type="button" class="btn btn-outline-secondary">
+                              <i class="fa-solid fa-pencil"></i> 
+                            </button>
+                          </a> 
+                          <a href="#">
+                            <button type="button" class="btn btn-outline-secondary">
+                              <i class="fa-solid fa-trash"></i> 
+                            </button>
+                          </a>
+                        </td>
+                      </tr>
+                      <!-- 81 -->
+                      <tr>
+                        <th scope="row" class="w-50 name">
+                          <img src="img/class-avatar.jpg" class="h-75" alt="">
+                          Classe 81
+                        </th>
+                        <td class="date d-none d-md-table-cell">15 Feb 2021</td>
+                        <td class="roi d-none d-md-table-cell">20%</td>
+                        <td class="state"><button type="button" class="btn btn-success">Done</button></td>
+                        <td class="action">
+                          <a href="#">
+                            <button type="button" class="btn btn-outline-secondary">
+                              <i class="fa-solid fa-pencil"></i> 
+                            </button>
+                          </a> 
+                          <a href="#">
+                            <button type="button" class="btn btn-outline-secondary">
+                              <i class="fa-solid fa-trash"></i> 
+                            </button>
+                          </a>
+                        </td>
+                      </tr>
+                      <!-- 82 -->
+                      <tr>
+                        <th scope="row" class="w-50 name">
+                          <img src="img/class-avatar.jpg" class="h-75" alt="">
+                          Classe 82
+                        </th>
+                        <td class="date d-none d-md-table-cell">15 Feb 2021</td>
+                        <td class="roi d-none d-md-table-cell">20%</td>
+                        <td class="state"><button type="button" class="btn btn-success">Done</button></td>
+                        <td class="action">
+                          <a href="#">
+                            <button type="button" class="btn btn-outline-secondary">
+                              <i class="fa-solid fa-pencil"></i> 
+                            </button>
+                          </a> 
+                          <a href="#">
+                            <button type="button" class="btn btn-outline-secondary">
+                              <i class="fa-solid fa-trash"></i> 
+                            </button>
+                          </a>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </section>
           </div>
-        </div>
-        <!-- F.A.Q -->
-        <div class="col-12 order-1 order-md-2 col-md-8">
-          <div class="nested rounded-3">
-            F.A.Q
+          <!-- To-Do -->
+          <div class="col-12 order-2 order-md-1 col-md-4">
+            <div class="nested rounded-3">
+              To-Do
+            </div>
           </div>
-        </div>
-        <!-- Grafico -->
-        <div class="col-12 order-3 order-md-3 col-md-4">
-          <div class="nested rounded-3">
-            Grafico
+          <!-- F.A.Q -->
+          <div class="col-12 order-1 order-md-2 col-md-8">
+            <div class="nested rounded-3">
+              F.A.Q
+            </div>
+          </div>
+          <!-- Grafico -->
+          <div class="col-12 order-3 order-md-3 col-md-4">
+            <div class="nested rounded-3">
+              Grafico
+            </div>
           </div>
         </div>
       </div>

@@ -1,6 +1,6 @@
 * {
   font-family: 'Roboto', sans-serif;
-  color: #fff;
+  font-size: .9rem;
 }
 
 a {
@@ -20,18 +20,17 @@ a {
 
 .wrapper-bottom {
   display: flex;
+  height: calc(100vh - 4rem);
 }
 
 .sidebar {
   background-color: rgba(1, 0, 24, 0.8);
-  /* width: 10rem; */ /* TEST BOOTSTRAP */
-  height: calc(100vh - 4rem);
+  width: 10rem;
   background-image: url(../img/sidebar-bg.png);
 }
 
 .main-content {
-  width: calc(100vw - 4rem); /* TEST BOOTSTRAP */
-  height: calc(100vh - 4rem);
+  width: calc(100vw - 10rem);
   overflow-y: auto;
 }
 
@@ -51,12 +50,8 @@ form {
 
 /* DEBUG */
 
-.test-1 .col-12 {
-  background-color: #1b70e8f1;
-}
-
 .nested {
-  background-color: darkcyan;
+  background-color: lightcoral;
   min-height: 6rem;
 }
 
@@ -67,10 +62,55 @@ form {
   margin: 0 .5rem;
 }
 
+/* Info */
+
+.info {
+  background-color: #1b70e8f1;
+  color: #fff;
+  width: calc(100vw - 10rem);
+}
+
 #app {
   margin-left: 0;
 }
 
 #online-students {
-  font-size: 1.75rem;
+  font-size: 1.5rem;
+}
+
+/* Prossime Classi */
+
+.next-class a {
+  font-size: 1rem;
+}
+
+.card-header {
+  color: #000;
+}
+
+th,
+td {
+  text-align: center;
+}
+
+tr,
+th {
+  height: 4rem;
+}
+
+.w-50,
+.name {
+  text-align: start;
+}
+
+.action {
+  min-width: 6.5rem;
+}
+
+.action a {
+  margin: 0;
+}
+
+.date {
+  min-width: 7rem;
 }
