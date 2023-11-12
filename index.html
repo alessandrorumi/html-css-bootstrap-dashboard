@@ -25,7 +25,8 @@
           <img src="img/mobile-logo.png" class="h-100 d-inline-block d-sm-none" alt="">
         </a>
         <form>
-            <input class="form-control" type="text" placeholder="Prova a cercare: Lezioni di Laravel" readonly="" aria-label="Search">
+          <i class="fa fa-search" style="color: #424242;"></i>
+          <input class="form-control" type="text" placeholder="Prova a cercare: Lezioni di Laravel" aria-label="Search">
         </form>
         <a href="#" class="d-none d-md-inline-block">
           <i class="fa-solid fa-bars" style="color: #424242;"></i>
@@ -114,8 +115,95 @@
             <div class="col-12 mb-3">
               <div class="nested rounded-3">
                 <div class="card">
-                  <div class="card-header">
+                  <div class="card-header d-flex justify-content-between align-items-center">
                     Prossime Classi
+                    <button class="btn btn-outline-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+                      <!-- + -->
+                      <i class="fa-solid fa-plus"></i>
+                    </button>
+                    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+                      <div class="offcanvas-header">
+                        <h5 id="offcanvasRightLabel">Inserisci nuovo studente</h5>
+                        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                      </div>
+                      <div class="offcanvas-body">
+                        <form>
+                          <div class="row">
+                            <!-- Nome -->
+                            <div class="col-6">
+                              <label for="fname">Nome</label>
+                              <input type="text" id="fname" name="fname" class="form-control">
+                            </div>
+                            <!-- Cognome -->
+                            <div class="col-6 mb-4">
+                              <label for="lname">Cognome</label>
+                              <input type="text" id="fname" name="fname" class="form-control">
+                            </div>
+                            <!-- Mail -->
+                            <div class="col-6">
+                              <label for="InputEmail">Indirizzo Email</label>
+                              <div class="input-group flex-nowrap">
+                                <span class="input-group-text" id="addon-wrapping">@</span>
+                                <input type="text" class="form-control" aria-label="Username" aria-describedby="addon-wrapping">
+                              </div>
+                            </div>
+                            <!-- Password -->
+                            <div class="col-6">
+                              <label for="inputPassword">Password</label>
+                              <input type="password" id="inputPassword" class="form-control" aria-describedby="passwordHelpBlock">
+                            </div>
+                            <!-- Indirizzo -->
+                            <div class="col-12 my-4">
+                              <label for="address">Indirizzo</label>
+                              <input type="text" id="address" name="address" class="form-control">
+                            </div>
+                            <!-- Città -->
+                            <div class="col-6">
+                              <label for="city">Citt&agrave;</label>
+                              <input type="text" id="city" name="city" class="form-control">
+                            </div>
+                            <!-- Stato -->
+                            <div class="col-4">
+                              <label for="city">Stato</label>
+                              <div class="input-group">
+                                <select class="form-select" id="inputGroupSelect" aria-label="Example select with button addon">
+                                  <option selected>Scegli</option>
+                                  <option value="1">Italia</option>
+                                  <option value="2">Stati Uniti</option>
+                                  <option value="3">Spagna</option>
+                                </select>
+                              </div>
+                            </div>
+                            <!-- CAP -->
+                            <div class="col-2">
+                              <label for="cap">CAP</label>
+                              <input type="text" id="cap" name="cap" class="form-control">
+                            </div>
+                            <!-- Foto Profilo -->
+                            <div class="col-12 my-4">
+                              <label for="photo">Foto Profilo</label>
+                              <div class="input-group">
+                                <input type="file" class="form-control" id="photo">
+                              </div>
+                            </div>
+                            <!-- Prosegui -->
+                            <div class="col-12 mb-3">
+                              <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <label class="form-check-label" for="flexCheckDefault">
+                                  Seleziona per proseguire
+                                </label>
+                              </div>
+                            </div>
+                            <!-- Salva o Svuota -->
+                            <div class="col-12">
+                              <button type="button" class="btn btn-primary">Salva</button>
+                              <button type="button" class="btn btn-warning">Svuota</button>
+                            </div>
+                          </div>
+                        </form>
+                      </div>
+                    </div>
                   </div>
                   <table class="table table-hover mb-0">
                     <thead>
@@ -323,7 +411,7 @@
                           Come aggiungere una nuova classe?
                         </button>
                       </h2>
-                      <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                      <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordion">
                         <div class="accordion-body">
                           Funziona!
                         </div>
@@ -335,7 +423,7 @@
                           Come posso accedere alle informazioni del mio account?
                         </button>
                       </h2>
-                      <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                      <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordion">
                         <div class="accordion-body">
                           Funziona!
                         </div>
@@ -347,7 +435,7 @@
                           Posso usare questa dashboard da mobile?
                         </button>
                       </h2>
-                      <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                      <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordion">
                         <div class="accordion-body">
                           Funziona!
                         </div>

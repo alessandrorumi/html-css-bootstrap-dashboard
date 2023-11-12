@@ -9,8 +9,8 @@ a {
   color: #fff;
 }
 
-#boolean {
-  font-size: 1.75rem;
+.card-header {
+  font-size: 2rem;
 }
 
 /* Macroaree */
@@ -36,20 +36,11 @@ a {
   overflow-y: auto;
 }
 
-.card-header {
-  font-size: 2rem;
-}
+/* Navbar */
 
-/* Sidebar */
-
-@media all and (max-width: 576px) {
-  .sidebar {
-    width: 5rem;
-  }
-}
-
-form {
+.navbar form {
   flex-grow: 1;
+  position: relative;
 }
 
 .navbar a {
@@ -60,11 +51,23 @@ form {
   color: #fff;
 }
 
-/* DEBUG */
+form .fa-search{
 
-.nested {
-  background-color: lightcoral;
-  min-height: 6rem;
+  position: absolute;
+  top: .7rem;
+  left: .7rem;
+}
+
+form input {
+  text-indent: 1.25rem;
+}
+
+/* Sidebar */
+
+@media all and (max-width: 576px) {
+  .sidebar {
+    width: 5rem;
+  }
 }
 
 /* Main Content */
@@ -80,6 +83,10 @@ form {
   background-color: #1b70e8f1;
   color: #fff;
   width: 100%;
+}
+
+#boolean {
+  font-size: 1.75rem;
 }
 
 #app {
