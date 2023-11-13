@@ -21,8 +21,8 @@
     <nav class="navbar h-100 navbar-expand navbar-dark">
       <div class="container-fluid px-0 h-100 justify-content-start">
         <a class="navbar-brand mx-0 h-100 d-flex align-items-center" href="#">
-          <img src="img/logo.svg" class="h-75 d-none d-sm-inline-block" alt="">
-          <img src="img/mobile-logo.png" class="h-100 d-inline-block d-sm-none" alt="">
+          <img src="img/logo.svg" class="h-75 d-none d-md-inline-block" alt="">
+          <img src="img/mobile-logo.png" class="h-100 d-inline-block d-md-none" alt="">
         </a>
         <form>
           <i class="fa fa-search" style="color: #424242;"></i>
@@ -55,27 +55,35 @@
   <!-- Botttom -->
   <div class="wrapper-bottom">
     <!-- Sidebar -->
-    <div class="sidebar">
-      <div class=" pt-4 p-2 d-flex flex-column h-100">
-        <ul class="nav flex-column mb-auto flex-grow-1">
-          <li>
-            <a href="#" class="nav-link text-center">
-              <i class="fa-solid fa-house" style="color: #ffffff;"></i> <span class="d-none d-sm-inline-block">Home</span></a>
-          </li>
-          <li>
-            <a href="#" class="nav-link text-center">
-              <i class="fa-solid fa-chart-column" style="color: #ffffff;"></i> <span class="d-none d-sm-inline-block">Stats</span></a>
-          </li>
-          <li>
-            <a href="#" class="nav-link text-center">
-              <i class="fa-solid fa-signal" style="color: #ffffff;"> </i> <span class="d-none d-sm-inline-block">Signals</span></a>
-          </li>
+    <div class="sidebar py-4 d-flex flex-shrink-0">
+      <div class="d-flex flex-column w-100 h-100">
+        <ul class="flex-grow-1 list-unstyled d-flex flex-column">
+          <!-- Home -->
+          <a href="#" class="py-2 w-100 d-flex justify-content-center">
+            <li>
+              <i class="fa-solid fa-house" style="color: #ffffff;"></i><span class="d-none d-md-inline-block ms-3">Home</span>
+            </li>
+          </a>
+          <!-- Stats -->
+          <a href="#" class="py-2 w-100 d-flex justify-content-center">
+            <li>
+              <i class="fa-solid fa-chart-column" style="color: #ffffff;"></i><span class="d-none d-md-inline-block ms-3">Stats</span>
+            </li>
+          </a>
+          <!-- Signals -->
+          <a href="#" class="py-2 w-100 d-flex justify-content-center">
+            <li>
+              <i class="fa-solid fa-signal" style="color: #ffffff;"></i><span class="d-none d-md-inline-block ms-3">Signals</span>
+            </li>
+          </a>
         </ul>
-        <ul class="nav flex-column">
-          <li>
-            <a href="#" class="nav-link text-center">
-              <i class="fa-solid fa-gear" style="color: #ffffff;"></i> <span class="d-none d-sm-inline-block">Admin</span></a>
-          </li>
+        <ul class="list-unstyled d-flex flex-column align-items-center mb-0">
+          <!-- Admin -->
+          <a href="#" class="py-2 w-100 d-flex justify-content-center" class="py-2 w-100 d-flex justify-content-center">
+            <li>
+              <i class="fa-solid fa-gear" style="color: #ffffff;"></i><span class="d-none d-md-inline-block ms-3">Admin</span>
+            </li>
+          </a>
         </ul>
       </div>
     </div>
@@ -90,12 +98,15 @@
           <div class="col-12 col-md-8 pb-3">
             <div class="d-flex d-row align-items-center">
               <span id="boolean">Boolean </span>
-              <a href="#" class="btn rounded-pill btn-primary">Piano blaze</a>
+              <a href="#" class="btn rounded-pill btn-primary">Piano Blaze</a>
             </div>
             <div>
               <a href="#" class="btn rounded-pill btn-primary" id="app">3 app</a>
               >>
-              <a href="#" class="btn rounded-pill btn-primary">+</a>
+              <a href="#" class="btn rounded-pill btn-primary d-inline-block d-lg-none">+</a>
+              <a href="#" class="btn rounded-pill btn-primary d-none d-lg-inline-block">Boolean Mobile App</a>
+              <a href="#" class="btn rounded-pill btn-primary d-none d-lg-inline-block">Boolean Web App</a>
+              <a href="#" class="btn rounded-pill btn-primary d-none d-lg-inline-block">Boolean Blog App</a>
             </div>
           </div>
 
